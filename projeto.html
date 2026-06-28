@@ -6,6 +6,7 @@
 <title>Feedbacks e Grupo no Whatsapp</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -13,25 +14,46 @@
 }
 
 body{
-    font-family: Georgia, serif;
-    background-color:#f8f5fa;
+    font-family:Georgia, serif;
+    background-color:#ddc8ea;
 }
 
 .slide{
     min-height:100vh;
     padding:50px;
     background:linear-gradient(
-        rgba(255,255,255,0.95),
-        rgba(245,240,248,0.95)
+        rgba(244,205,241,.95),
+        rgba(232,223,236,.95)
     );
 }
 
+/* TÍTULO */
+
 h1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+
     text-align:center;
     font-size:4rem;
     color:#2d2d2d;
+
+    margin-top:50px;
     margin-bottom:80px;
 }
+
+.decoracao-titulo{
+    width:220px;
+    height:auto;
+    opacity:.8;
+}
+
+.direita{
+    transform:scaleX(-1);
+}
+
+/* CONTEÚDO */
 
 .conteudo{
     display:flex;
@@ -43,6 +65,7 @@ h1{
 
 .logo img{
     width:250px;
+    border-radius:100px;
 }
 
 .whatsapp{
@@ -73,38 +96,33 @@ h1{
     margin:10px 0;
 }
 
-.decoracao-esq{
-    position:fixed;
-    left:0;
-    bottom:0;
-    width:180px;
-    opacity:.3;
-}
 
-.decoracao-dir{
-    position:fixed;
-    right:0;
-    top:250px;
-    width:180px;
-    opacity:.3;
-}
+
 </style>
-
 </head>
+
 <body>
 
 <div class="slide">
 
-    <h1>Feedbacks e grupo no Whatsapp</h1>
+  
+
+    <h1>
+        <img src="decoracao.png" class="decoracao-titulo" alt="">
+
+        Feedbacks e grupo no Whatsapp
+
+        <img src="decoracao.png" class="decoracao-titulo direita" alt="">
+    </h1>
 
     <div class="conteudo">
 
         <div class="logo">
-            <img src="logo.png" alt="Logo Do Ventre ao Coração">
+            <img src="ventre.jpg" alt="Logo Do Ventre ao Coração">
         </div>
 
         <div class="whatsapp">
-            <a href="#">
+            <a href="https://chat.whatsapp.com/F2ov3UbGYk28FQdKkNORvt">
                 Acesse nosso grupo do Whatsapp<br>
                 clicando na nossa logo!
             </a>
@@ -115,7 +133,7 @@ h1{
     <div class="contato">
         <h2>Entre em contato conosco:</h2>
 
-        <p><strong>E-mail:</strong> doventreaocoracao30@gmail.com</p>
+        <p><strong>E-mail:</strong> doventre.aocoracao30@gmail.com</p>
 
         <p><strong>Grupo de WhatsApp:</strong> Raízes do Ventre ao Coração</p>
 
