@@ -1,0 +1,86 @@
+@font-face{
+    font-family: Spender;
+    src: url(font/BigSpender-v1.otf);
+}
+@font-face {
+    font-family: French;
+    src: url(font/Frenchpress.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #d3c3db;
+}
+nav{
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #211424;
+    padding: 10px;
+}
+.nav_titulo{
+    font-family: Spender;
+    color: #e1bee6;
+}
+.nav_barra{
+    margin-right: 30px;
+}
+nav ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    font-family: French;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c090d6;
+    padding-right: 20px;
+}
+nav ul li a:hover{
+    color: #e1bee6;
+    text-shadow: 0 0 5px #e1bee6, 0 0 10px #e1bee6, 0 0 20px #e1bee6, 0 0 30px #e1bee6;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+    transition: transform 0.2s, opacity 0.5s;
+}
+ul li a{
+    transition: 0.4s;
+    display: block;
+}
+ul:hover li a{
+    opacity: 0.4;
+}
+nav ul li a:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+}
+header h1{
+    font-family: Spender;
+    color: #2a1330;
+    font-size: 50px;
+    text-align: center;
+}
