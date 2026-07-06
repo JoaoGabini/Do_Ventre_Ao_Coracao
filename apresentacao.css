@@ -1,10 +1,18 @@
 @font-face{
     font-family: Spender;
-    src: url(font/BigSpender-v1.otf);
+    src: url(font/titulos-site/BigSpender-v1.otf);
 }
 @font-face {
     font-family: French;
-    src: url(font/Frenchpress.otf);
+    src: url(font/titulos-site/Frenchpress.otf);
+}
+@font-face{
+    font-family: Basic;
+    src: url(font/corpo_site/Basics-Texto.ttf);
+}
+@font-face{
+    font-family: Asmundila;
+    src: url(font/corpo_site/Asmudila-Titulo.otf);
 }
 *{
     margin: 0;
@@ -13,7 +21,9 @@
 }
 body{
     overflow-x: hidden;
-    background-color: #d3c3db;
+    background-image: url(img/fundo.png);
+    background-size: contain;
+    background-repeat:repeat-y;
 }
 nav{
     z-index: 999;
@@ -82,5 +92,64 @@ header h1{
     font-family: Spender;
     color: #2a1330;
     font-size: 50px;
+    text-align: center;
+    margin-left: 70px;
+}
+.corpo h2{
+    padding: 20px;
+    margin-top: 20px;
+    font-family: Asmundila;
+    color: #2a1330;
+    font-size: 70px;
+    text-align: center;
+}
+.corpo h3{
+    font-family: French;
+    color: #2a1330;
+    font-size: 40px;
+    text-align: center;
+}
+.corpo p,h4{
+    font-family: Basic;
+    color: #2a1330;
+    font-size: 30px;
+    text-align: center;
+}
+.flex_texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_texto1, .flex_texto2{
+    text-align: justify;
+}
+.texto{
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.integrantes img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #3d0d49;
+}
+
+.integrantes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.integrantes h3{
+    color: #2a1330;
+    font-size: 60px;
+    text-align: center;
+}
+.integrantes h4{
+    color: #2a1330;
+    font-size: 35px;
     text-align: center;
 }
