@@ -12,7 +12,7 @@
 }
 @font-face{
     font-family: Asmundila;
-    src: url(font/corpo_site/Asmudila-Titulo.otf);
+    src: url(font/corpo_site/Asmudila-Titulo.ttf);
 }
 *{
     margin: 0;
@@ -21,9 +21,11 @@
 }
 body{
     overflow-x: hidden;
-    background-image: url(img/fundo.png);
-    background-size: contain;
-    background-repeat:repeat-y;
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 nav{
     z-index: 999;
@@ -144,7 +146,7 @@ header h1{
 }
 
 .integrantes h3{
-    color: #2a1330;
+    color: #733383;
     font-size: 60px;
     text-align: center;
 }
@@ -152,4 +154,47 @@ header h1{
     color: #2a1330;
     font-size: 35px;
     text-align: center;
+}
+.palestras .data {
+    color: #a962bb;
+    font-size: 30px;
+    text-align: center;
+}
+.palestra1{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+    padding:30px;
+}
+.palestra2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+footer{
+    background-color: #211424;
+    color: #e1bee6;
+    text-align: justify;
+    padding: 20px;
+    font-family: French;
+    font-size: 30px;
+}
+footer h2{
+    font-family: Basic;
+}
+
+footer a{
+    color: #e1bee6;
+    text-decoration: underline 0.5px #c268cc;
+}
+
+footer .copyright{
+    font-size: 20px;
+    font-style: italic;
 }
