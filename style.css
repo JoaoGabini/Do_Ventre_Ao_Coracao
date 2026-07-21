@@ -96,73 +96,82 @@ nav ul li a:hover {
 
 .nome {
     position: absolute;
-    left: 35%;
+    left: 45%;
     top: 110px;
     font-family: French;
     font-size: 50px;
 }
 
-.etapa {
-    background: rgba(33, 20, 36);
-    opacity: 0.90;
-    width: 1000px;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 30px;
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    gap: 60px;
+    justify-content: center;
+    margin-top: 200px;
 }
 
-.etapa h2 {
+.curso {
+    width: 260px;
+    height: 380px;
+    background: #837487;
     font-family: French;
-    color: #e1bee6;
-    margin-bottom: 20px;
-    font-size: 32px;
-}
-
-.etapa p {
-    font-family: French;
-    color: #e1bee6;
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-
-.etapa ul {
-    margin-left: 25px;
-}
-
-.etapa li {
-    font-family: Basic;
     color: white;
-    font-size: 28px;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-
-.dica {
-    margin-top: 20px;
-    padding: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-left: 7px solid #c090d6;
-    background: rgba(192, 144, 214, .15);
-    color: #fff;
-    font-family: Basic;
-    font-size: 27px;
-}
-
-.etapas {
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
+    gap: 20px;
+    text-align: center;
+
+
+}
+.curso h3 {
+    height: 60px;
+    overflow: hidden;
+    font-size: 26px;
 }
 
-.etapa {
+.curso img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.curso p {
+    font-size: 22px;
+}
+
+.curso a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration:none;
+    color: white;
+}
+
+.curso h3 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curso {
     transition: 0.6s;
 }
 
-.etapa:hover {
+.curso:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.curso a {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.curso a:hover {
+    color: #d8c4ff;
+    transform: scale(1.1);
 }
