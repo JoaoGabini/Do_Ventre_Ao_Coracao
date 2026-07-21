@@ -106,13 +106,13 @@ header h1{
     text-align: center;
 }
 .corpo h3{
-    font-family: French;
+    font-family: Asmundila;
     color: #2a1330;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
 }
 .corpo p,h4{
-    font-family: Basic;
+    font-family: French;
     color: #2a1330;
     font-size: 30px;
     text-align: center;
@@ -124,10 +124,25 @@ header h1{
 }
 .flex_texto1, .flex_texto2{
     text-align: justify;
+    gap: 50px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.flex_texto1{
+    padding-left: 100px;
+}
+.flex_texto2{
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .texto{
     padding: 20px;
     padding-bottom: 40px;
+}
+
+.texto p{
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .integrantes img{
@@ -176,6 +191,11 @@ header h1{
     flex-direction: row;
     padding: 30px;
     margin-bottom: 50px;
+}
+.palestras p{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
 }
 footer{
     background-color: #211424;
