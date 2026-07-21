@@ -96,91 +96,12 @@ nav ul li a:hover {
 
 .nome {
     position: absolute;
-<<<<<<< HEAD
-    left: 45%;
-=======
     left: 35%;
->>>>>>> emprego
     top: 110px;
     font-family: French;
     font-size: 50px;
 }
 
-<<<<<<< HEAD
-.cursos {
-    display: grid;
-    grid-template-columns: repeat(4, 260px);
-    gap: 60px;
-    justify-content: center;
-    margin-top: 200px;
-}
-
-.curso {
-    width: 260px;
-    height: 380px;
-    background: #837487;
-    font-family: French;
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-
-
-}
-.curso h3 {
-    height: 60px;
-    overflow: hidden;
-    font-size: 26px;
-}
-
-.curso img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.curso p {
-    font-size: 22px;
-}
-
-.curso a {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration:none;
-    color: white;
-}
-
-.curso h3 {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.curso {
-    transition: 0.6s;
-}
-
-.curso:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-}
-
-.curso a {
-    display: inline-block;
-    transition: 0.3s;
-}
-
-.curso a:hover {
-    color: #d8c4ff;
-    transform: scale(1.1);
-}
-=======
 .etapa {
     background: rgba(33, 20, 36);
     opacity: 0.90;
@@ -245,4 +166,3 @@ nav ul li a:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
->>>>>>> emprego
