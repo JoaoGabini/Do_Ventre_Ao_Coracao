@@ -96,17 +96,12 @@ nav ul li a:hover {
 
 .nome {
     position: absolute;
-<<<<<<< HEAD
     left: 45%;
-=======
-    left: 35%;
->>>>>>> emprego
     top: 110px;
     font-family: French;
     font-size: 50px;
 }
 
-<<<<<<< HEAD
 .cursos {
     display: grid;
     grid-template-columns: repeat(4, 260px);
@@ -180,69 +175,3 @@ nav ul li a:hover {
     color: #d8c4ff;
     transform: scale(1.1);
 }
-=======
-.etapa {
-    background: rgba(33, 20, 36);
-    opacity: 0.90;
-    width: 1000px;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.etapa h2 {
-    font-family: French;
-    color: #e1bee6;
-    margin-bottom: 20px;
-    font-size: 32px;
-}
-
-.etapa p {
-    font-family: French;
-    color: #e1bee6;
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-
-.etapa ul {
-    margin-left: 25px;
-}
-
-.etapa li {
-    font-family: Basic;
-    color: white;
-    font-size: 28px;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-
-.dica {
-    margin-top: 20px;
-    padding: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-left: 7px solid #c090d6;
-    background: rgba(192, 144, 214, .15);
-    color: #fff;
-    font-family: Basic;
-    font-size: 27px;
-}
-
-.etapas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-}
-
-.etapa {
-    transition: 0.6s;
-}
-
-.etapa:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-}
->>>>>>> emprego
