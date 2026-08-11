@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Spender;
+    src: url(font/titulos-site/BigSpender-v1.otf);
+}
+
+@font-face {
+    font-family: French;
+    src: url(font/titulos-site/Frenchpress.otf);
+}
+
+@font-face {
+    font-family: Basic;
+    src: url(font/corpo_site/Basics-Texto.ttf);
+}
+
+@font-face {
+    font-family: Asmundila;
+    src: url(font/corpo_site/Asmudila-Titulo.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #211424;
+    padding: 10px;
+}
+
+.nav_titulo {
+    font-family: Spender;
+    color: #e1bee6;
+}
+
+.nav_barra {
+    margin-right: 30px;
+}
+
+nav ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: French;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c090d6;
+    padding-right: 20px;
+}
+
+nav ul li a:hover {
+    color: #e1bee6;
+    text-shadow: 0 0 5px #e1bee6, 0 0 10px #e1bee6, 0 0 20px #e1bee6, 0 0 30px #e1bee6;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+    transition: transform 0.2s, opacity 0.5s;
+}
+
+ul li a {
+    transition: 0.4s;
+    display: block;
+}
+
+ul:hover li a {
+    opacity: 0.4;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.nome {
+    position: absolute;
+    left: 35%;
+    top: 110px;
+    font-family: French;
+    font-size: 50px;
+}
+
+.etapa {
+    background: rgba(33, 20, 36);
+    opacity: 0.90;
+    width: 1000px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.etapa h2 {
+    font-family: French;
+    color: #e1bee6;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.etapa p {
+    font-family: French;
+    color: #e1bee6;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.etapa ul {
+    margin-left: 25px;
+}
+
+.etapa li {
+    font-family: Basic;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.dica {
+    margin-top: 20px;
+    padding: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-left: 7px solid #c090d6;
+    background: rgba(192, 144, 214, .15);
+    color: #fff;
+    font-family: Basic;
+    font-size: 27px;
+}
+
+.etapas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.etapa {
+    transition: 0.6s;
+}
+
+.etapa:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
