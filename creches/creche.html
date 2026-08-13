@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Creches Disponíveis</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+
+
+        body{
+            background-image: url("fundo.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+            overflow-x:hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        nav{
+            position:sticky;
+            top:0;
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:#211424;
+            padding:15px 30px;
+            z-index:1000;
+        }
+
+        .nav_titulo{
+            list-style:none;
+            color:#e1bee6;
+            font-size:20px;
+           
+        }
+
+        .nav_barra{
+            list-style:none;
+            display:flex;
+            gap:25px;
+        }
+
+        .nav_barra a{
+            color:#c090d6;
+            text-decoration:none;
+            font-size:26px;
+            transition:.3s;
+        }
+
+        .nav_barra a:hover{
+            color:#fff;
+        }
+
+        h1{
+            text-align:center;
+            margin-top:40px;
+            font-size:42px;
+            color:#2a1330;
+        }
+
+        p{
+            text-align:center;
+            font-size:20px;
+            margin:10px;
+        }
+
+        h2{
+            text-align:center;
+            margin-top:50px;
+            color:#2a1330;
+        }
+
+        iframe{
+            display:block;
+            margin:20px auto;
+            border-radius:10px;
+        }
+
+        @font-face{
+    font-family: Spender;
+    src: url("font/titulos-site/BigSpender-v1.otf");
+}
+
+@font-face{
+    font-family: French;
+    src: url("font/titulos-site/Frenchpress.otf");
+}
+
+@font-face{
+    font-family: Basic;
+    src: url("font/corpo_site/Basics-Texto.ttf");
+}
+
+@font-face{
+    font-family: Asmundila;
+    src: url("font/corpo_site/Asmudila-Titulo.ttf");
+}
+
+.nav_titulo{
+    font-family: Spender;
+}
+
+.nav_barra a{
+    font-family: French;
+}
+
+h1{
+    font-family: Spender;
+}
+
+h2{
+    font-family: Asmundila;
+}
+
+p{
+    font-family: Basic;
+}
+
+/* Card de cada creche */
+.creche-card{
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    background: rgba(255,255,255,0.55);
+    border: 4px solid #3b2e3e;
+    border-radius: 30px;
+
+    backdrop-filter: blur(3px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+/* mapa */
+
+.creche-card iframe{
+    width: 500px;
+    height: 320px;
+
+    border: 6px solid #3b2e3e !important;
+    border-radius: 25px;
+}
+
+/* informações */
+
+.info{
+    flex:1;
+}
+
+.info h2{
+    text-align:left;
+    margin-bottom:20px;
+    font-family: Asmundila;
+    font-size:42px;
+}
+
+.info p{
+    text-align:left;
+    font-family: Basic;
+    font-size:24px;
+    margin:15px 0;
+    color:#3b2e3e;
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+
+    <ul class="nav_titulo">
+        <li>Do Ventre Ao Coração</li>
+    </ul>
+
+    <ul class="nav_barra">
+        <li><a href="apresentacao.html">Apresentação do Projeto</a></li>
+        <li><a href="#">Vagas de Emprego</a></li>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="creche.html">Creches</a></li>
+        <li><a href="#">Feedbacks</a></li>
+    </ul>
+
+</nav>
+
+    <h1>Creches Disponíveis</h1>
+
+    <p>
+        Aqui você encontra algumas creches e escolas de educação infantil
+        disponíveis em Ribeirão Pires para auxiliar mães e responsáveis.
+    </p>
+
+    <div class="creche-card">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.137241425366!2d-46.41091102466538!3d-23.706792578700174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6ce52acbf583%3A0x8fffef99f08ff173!2sEstancia%20Delfis!5e0!3m2!1spt-BR!2sbr!4v1783458398221!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    <div class="info">
+
+        <h2>Estância Delfis</h2>
+
+        <p><strong>Endereço:</strong><br>
+        Rua Eugênio Gallo, 145 - Centro, Ribeirão Pires - SP</p>
+
+        <p><strong>Telefone:</strong><br>
+        (11) 4828-6131</p>
+
+    </div>
+
+</div>
+
+    <div class="creche-card">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.463626419672!2d-46.43425832466576!3d-23.69513217870817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6c7a43d18803%3A0xc0009904b94d4f8d!2sMaria%20Gomes%20Pilar%20Creche%20Municipal!5e0!3m2!1spt-BR!2sbr!4v1783368776280!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+    <div class="info">
+
+        <h2>Creche Municipal Maria Gomes Pilar</h2>
+
+        <p><strong>Endereço:</strong><br>
+        Rua Lusitanos, 2 - Vila Gomes, Ribeirão Pires - SP</p>
+
+        <p><strong>Telefone:</strong><br>
+        (11) 4828-1561</p>
+
+    </div>
+
+</div>
+
+
+<div class="creche-card">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.9709397605516!2d-46.395021224665236!3d-23.712731778696153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6d22db05cfcb%3A0x888af09df0f1ef7f!2sEscola%20Municipal%20Julia%20Del%20Corto%20Roncon%20Creche%20Pre%20Escola!5e0!3m2!1spt-BR!2sbr!4v1783368872949!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+    <div class="info">
+
+        <h2>Escola Municipal Julia Del Corto Roncon</h2>
+
+        <p><strong>Endereço:</strong><br>
+        Rua João Pessoa - Roncon</p>
+
+        <p><strong>Telefone:</strong><br>
+        (11) 4825-8207</p>
+
+    </div>
+
+</div>
+
+
+<div class="creche-card">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.0825212208997!2d-46.41081972466531!3d-23.708746978698823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6dab27074bab%3A0x8e1b29c32d124fcd!2sEscola%20de%20Educa%C3%A7%C3%A3o%20Infantil%20Baby%E2%80%99s%20Universe!5e0!3m2!1spt-BR!2sbr!4v1783369288495!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+    <div class="info">
+
+        <h2>Escola de Educação Infantil Baby's Universe</h2>
+
+        <p><strong>Endereço:</strong><br>
+        Rua Giácomo Sortino, 234 - Vila Albertina, Ribeirão Pires - SP</p>
+
+        <p><strong>Telefone:</strong><br>
+        (11) 95020-8599</p>
+
+    </div>
+
+</div>
+
+
+<div class="creche-card">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.8661186368954!2d-46.42374252466516!3d-23.71647457869357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6c9366a4d3bf%3A0x682df40795531c14!2sE.M.%20Prof.%20Neusa%20Luz%20Sanches!5e0!3m2!1spt-BR!2sbr!4v1783369485814!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+    <div class="info">
+
+        <h2>E.M. Prof. Neusa Luz Sanches</h2>
+
+        <p><strong>Endereço:</strong><br>
+        Avenida Papa João XXIII, 35 - Suíssa, Ribeirão Pires - SP</p>
+
+        <p><strong>Telefone:</strong><br>
+        (11) 4827-5879</p>
+
+    </div>
+
+</div>
