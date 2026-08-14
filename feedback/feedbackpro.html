@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+
+    <style>
+        @font-face {
+            font-family: Spender;
+            src: url(font/titulos-site/BigSpender-v1.otf);
+        }
+
+        @font-face {
+            font-family: French;
+            src: url(font/titulos-site/Frenchpress.otf);
+        }
+
+        @font-face {
+            font-family: Basic;
+            src: url(font/corpo_site/Basics-Texto.ttf);
+        }
+
+        @font-face {
+            font-family: Asmundila;
+            src: url(font/corpo_site/Asmudila-Titulo.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            background-image: url(fundo.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        nav {
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #211424;
+            padding: 10px;
+        }
+
+        .nav_titulo {
+            font-family: Spender;
+            color: #e1bee6;
+        }
+
+        .nav_barra {
+            margin-right: 30px;
+        }
+
+        nav ul {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        nav ul li a {
+            font-family: French;
+            text-decoration: none;
+            font-size: 25px;
+            color: #c090d6;
+            padding-right: 20px;
+        }
+
+        nav ul li a:hover {
+            color: #e1bee6;
+            text-shadow: 0 0 5px #e1bee6, 0 0 10px #e1bee6, 0 0 20px #e1bee6, 0 0 30px #e1bee6;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+            font-size: 20px;
+            transition: transform 0.2s, opacity 0.5s;
+        }
+
+        ul li a {
+            transition: 0.4s;
+            display: block;
+        }
+
+        ul:hover li a {
+            opacity: 0.4;
+        }
+
+        nav ul li a:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        .slide {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            text-align: center;
+            font-size: 4rem;
+            color: #2d2d2d;
+            margin-top: 50px;
+            margin-bottom: 80px;
+        }
+
+        .decoracao-titulo {
+            width: 220px;
+            height: auto;
+            opacity: .8;
+        }
+
+        .direita {
+            transform: scaleX(-1);
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            width: 250px;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .logo img:hover {
+            transform: scale(1.05);
+        }
+
+        .whatsapp {
+            max-width: 500px;
+        }
+
+        .whatsapp a {
+            font-family: French;
+            font-size: 42px;
+            color: #222;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .contato {
+            margin-top: 120px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .contato p {
+            font-family: French;
+            font-size: 38px;
+            margin: 10px 0;
+        }
+
+        .entre {
+            position: absolute;
+            left: 42%;
+            top: 50%;
+            font-family: French;
+            font-size: 3rem;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav_titulo">
+            <li>Do Ventre Ao Coração</li>
+        </ul>
+        <ul class="nav_barra">
+            <li><a href="/Do_Ventre_Ao_Coracao/apresentacao_projeto/apresentacao.html">Apresentação do Projeto</a></li>
+            <li><a href="/Do_Ventre_Ao_Coracao/emprego/emprego.html">Dicas de Emprego</a></li>
+            <li><a href="/Do_Ventre_Ao_Coracao/cursos/cursos.html">Cursos</a></li>
+            <li><a href="">Creches</a></li>
+            <li><a href="/Do_Ventre_Ao_Coracao/feedback/feedback.html">Feedbacks</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div class="slide"></div>
+
+    <h1>
+        <img src="decoracao.png" class="decoracao-titulo" alt="">
+
+
+
+        <img src="decoracao.png" class="decoracao-titulo direita" alt="">
+    </h1>
+
+    <div class="conteudo">
+
+        <div class="logo">
+            <a href="https://chat.whatsapp.com/F2ov3UbGYk28FQdKkNORvt" target="_blank">
+                <img src="logo_icon.png" alt="Logo Do Ventre ao Coração">
+            </a>
+        </div>
+
+        <div class="whatsapp">
+            <a href="https://chat.whatsapp.com/F2ov3UbGYk28FQdKkNORvt" target="_blank">
+                Acesse nosso grupo do Whatsapp<br>
+                clicando na nossa logo!
+            </a>
+        </div>
+
+    </div>
+
+    <h2 class="entre">Entre em contato conosco:</h2>
+
+    <div class="contato">
+
+
+        <p><strong>E-mail:</strong> doventre.aocoracao30@gmail.com</p>
+
+        <p><strong>Grupo de WhatsApp:</strong> Raízes do Ventre ao Coração</p>
+
+        <p><strong>Instagram:</strong> @doventreaocoracao</p>
+    </div>
+
+</body>
+
+</html>
